@@ -48,6 +48,10 @@ function solve() {
 	C = readline().split(' ').map(x => parseInt(x));
 	
 	//compute here
-
-	process.stdout.write(/*put results here */);
+	for(var sum=0; sum<N; sum++){
+		var avg=sum/N;
+		var j=sum%M
+		process.stdout.write(str(avg)+" "+str(j));
+	}
+	
 }
